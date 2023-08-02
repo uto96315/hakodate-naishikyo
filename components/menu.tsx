@@ -1,14 +1,5 @@
 import { HiHome } from "react-icons/hi";
 
-type Props = {
-
-};
-const MenuElement: React.FC<Props> = ({ }) => {
-    return (
-        <></>
-    );
-};
-
 const Menu = () => {
     const menus = [
         {
