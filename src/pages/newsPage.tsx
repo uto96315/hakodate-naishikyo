@@ -8,3 +8,5 @@ const NewsPage: React.FC<Props> = () => {
         </div>
     );
 };
+
+export default NewsPage;
