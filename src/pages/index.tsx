@@ -8,6 +8,7 @@ import { useState } from 'react';
 import PassArea from '../../components/v1/pass';
 import News from '../../components/news';
 import Message from '../../components/message';
+import Movies from '../../components/movies';
 
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
 
   if (!passCheckResult) {
     return (
-      <PassArea pass={password} setPass={setPassword} passCheck={passCheck}/>
+      <PassArea pass={password} setPass={setPassword} passCheck={passCheck} />
     );
   } else {
     return (
@@ -35,10 +36,11 @@ export default function Home() {
         <SlickArea />
         <ButtonArea />
         <Menu />
-        
+
         {/* 以下本体 */}
         <News />
         <Message />
+        <Movies />
 
         <div className='min-h-screen'></div>
       </main>
