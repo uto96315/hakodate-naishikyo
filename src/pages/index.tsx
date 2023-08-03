@@ -7,6 +7,7 @@ import Menu from '../../components/menu';
 import { useState } from 'react';
 import PassArea from '../../components/v1/pass';
 import News from '../../components/news';
+import Message from '../../components/message';
 
 
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
         
         {/* 以下本体 */}
         <News />
+        <Message />
 
         <div className='min-h-screen'></div>
       </main>
