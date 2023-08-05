@@ -7,7 +7,7 @@ type PassAreaProps = {
 const PassArea: React.FC<PassAreaProps> = ({ pass, setPass, passCheck }) => {
     return (
         <div className="max-w-screen h-screen bg-gray-500 flex items-center justify-center">
-            <div className="bg-white py-14 mx-10 w-full px-10 flex flex-col space-y-2 rounded-lg shadow-md">
+            <div className="bg-white py-14 mx-10 w-full px-10 flex flex-col space-y-2 rounded-lg shadow-md md:w-1/3">
                 <label className="text-lg">パスワード</label>
                 <input
                     type="password"
