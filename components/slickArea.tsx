@@ -14,7 +14,6 @@ const SlickArea: React.FC = () => {
         arrows: false,
         autoplay: true,
         autoplaySpeed: 3000,
-        centerMode: true,
         appendDots: (dots: React.ReactNode) => (
             <div style={{ position: "relative", bottom: "10px" }}>
                 <ul
@@ -29,14 +28,14 @@ const SlickArea: React.FC = () => {
     const imgs = ["/slickMock01.jpg", "/slickMock02.jpg"];
 
     return (
-        <div className='h-1/3 px-20'>
+        <div className='md:h-1/3 md:px-20'>
             <Slider {...settings}>
                 {imgs.map((img, index) => (
                     <div key={index} className=''>
                         <img
                             src={img}
                             alt={`スライド画像${index + 1}枚目`}
-                            className='mx-auto rounded-xl shadow-sm'
+                            className='mx-auto md:rounded-xl shadow-sm'
                         />
                     </div>
                 ))}
