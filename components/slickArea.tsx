@@ -28,7 +28,7 @@ const SlickArea: React.FC = () => {
     const imgs = ["/slickMock01.jpg", "/slickMock02.jpg"];
 
     return (
-        <div className='md:h-1/3 md:px-20'>
+        <div className='md:h-1/3 md:px-20 mt-16'>
             <Slider {...settings}>
                 {imgs.map((img, index) => (
                     <div key={index} className=''>

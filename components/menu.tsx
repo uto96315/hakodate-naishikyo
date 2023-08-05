@@ -28,7 +28,7 @@ const Menu = () => {
         },
     ];
     return (
-        <div className="py-5 flex justify-center cursor-pointer" style={{ backgroundColor: "#faf9f5" }}>
+        <div className="hidden py-5 md:flex justify-center cursor-pointer" style={{ backgroundColor: "#faf9f5" }}>
             <div className="border-r-2 border-gray-300 w-min px-12 py-5 flex justify-center items-center hover:bg-gray-200 rounded">
                 <HiHome size={40} color="orange" />
             </div>
