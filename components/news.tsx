@@ -4,10 +4,10 @@ import AllViewButton from "./v1/allViewButton";
 
 
 const News = () => {
-    
+
     return (
         <div className="w-screen py-10 px-10">
-            <Title text="News"/>
+            <Title text="News" />
             <div className="pt-5">
                 {
                     newsMock.map((news, index) => (
@@ -16,22 +16,25 @@ const News = () => {
                                 <p className="text-gray-500">
                                     {news.date}
                                 </p>
-                                <p>
+                                <p className="text-theme">
                                     {news.title}
                                 </p>
+                            </div>
+                            <div className="py-2">
+                                {news.content}
                             </div>
                         </div>
                     ))
                 }
             </div>
-            
+
 
             <div className="text-center my-5">
-                <AllViewButton />
+                <AllViewButton route="/news" />
             </div>
-            <hr style={{ border: "1px solid #e5e7eb"}}/>
+            <hr style={{ border: "1px solid #e5e7eb" }} />
         </div>
-    )
-}
+    );
+};
 
 export default News;
