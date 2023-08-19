@@ -10,7 +10,7 @@ const Message: React.FC = () => {
 
             <div className="py-5 shadow-2xl -mx-4 -my-2">
                 <div className="md:flex md:space-x-3">
-                    <img src="/院長写真.jpg" alt=""/>
+                    <img src="/院長写真.jpg" alt="" className="w-auto md:w-1/2 h-auto md:h-full object-cover"/>
                     <div className="w-full h-min py-10 px-10">
                         <h2 className="text-xl md:text-3xl font-sans font-semibold pb-5 text-center">
                             健康をサポートし”笑顔”に！

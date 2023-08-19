@@ -11,16 +11,19 @@ const ButtonAreaForSM = () => {
             title: "お電話",
             icon: <BsFillTelephoneFill size={20} />,
             bg: "",
+            link: "",
         },
         {
             title: "WEB予約",
             icon: <HiDesktopComputer size={20} />,
             bg: "",
+            link: "",
         },
         {
             title: "アクセス",
             icon: <BiMap size={20} color="white" />,
             bg: "",
+            link: "",
         },
     ];
     return (

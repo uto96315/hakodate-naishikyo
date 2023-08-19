@@ -11,6 +11,7 @@ import Message from '../../components/message';
 import Movies from '../../components/movies';
 import ButtonAreaForSM from '../../components/buttonAreaForSM';
 import Sidebar from '../../components/sidebar';
+import AboutClinic from '../../components/aboutClinic';
 
 
 export default function Home() {
@@ -31,11 +32,11 @@ export default function Home() {
     }
   };
 
-  if (!passCheckResult) {
-    return (
-      <PassArea pass={password} setPass={setPassword} passCheck={passCheck} />
-    );
-  } else {
+  // if (!passCheckResult) {
+  //   return (
+  //     <PassArea pass={password} setPass={setPassword} passCheck={passCheck} />
+  //   );
+  // } else {
     return (
       <main className='font-serif'>
         <div>
@@ -50,6 +51,7 @@ export default function Home() {
           <News />
           <Message />
           <Movies />
+          <AboutClinic />
 
           <div className='min-h-screen'></div>
         </div>
@@ -60,4 +62,4 @@ export default function Home() {
       </main>
     );
   }
-}
+// }
