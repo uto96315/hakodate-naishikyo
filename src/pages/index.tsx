@@ -13,6 +13,7 @@ import ButtonAreaForSM from '../../components/buttonAreaForSM';
 import Sidebar from '../../components/sidebar';
 import AboutClinic from '../../components/aboutClinic';
 import Access from '../../components/access';
+import ClinicFeatures from '../../components/clinicFeatures';
 
 
 export default function Home() {
@@ -53,6 +54,7 @@ export default function Home() {
         <Message isNextButton={true} />
         {/* <Movies /> */}
         <AboutClinic />
+        <ClinicFeatures/>
         <Access />
         <footer className='bg-theme py-2 text-white text-center'>
           ©︎2023 まべ五稜郭消化器・内視鏡クリニック
