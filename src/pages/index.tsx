@@ -54,6 +54,12 @@ export default function Home() {
         {/* <Movies /> */}
         <AboutClinic />
         <Access />
+        <footer className='bg-theme py-2 text-white text-center'>
+          ©︎2023 まべ五稜郭消化器・内視鏡クリニック
+        </footer>
+        <div className='h-20'>
+          {/* ここは後で消す */}
+        </div>
       </div>
       {sidebarIsOpen &&
         <div className='bg-white fixed right-0 top-0 z-50'>
