@@ -1,8 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
+import { useRouter } from "next/router";
 import { MdOutlineNavigateNext } from "react-icons/md";
 
+type Props = {
+    isNextButton: boolean; // 次へボタンの有無
+};
 
-const Message: React.FC = () => {
+const Message: React.FC<Props> = ({ isNextButton }) => {
+    const router = useRouter();
     return (
         <div className="min-w-screen px-5 md:px-10 py-10">
             <h1 className="text-center text-4xl pb-2 text-gray-500">院長挨拶</h1>
@@ -10,7 +15,7 @@ const Message: React.FC = () => {
 
             <div className="py-5 shadow-2xl -mx-4 -my-2">
                 <div className="md:flex md:space-x-3">
-                    <img src="/院長写真.jpg" alt="" className="w-auto md:w-1/2 h-auto md:h-full object-cover"/>
+                    <img src="/院長写真.jpg" alt="" className="w-auto md:w-1/2 h-auto md:h-full object-cover" />
                     <div className="w-full h-min py-10 px-10">
                         <h2 className="text-xl md:text-3xl font-sans font-semibold pb-5 text-center">
                             健康をサポートし”笑顔”に！
@@ -23,12 +28,19 @@ const Message: React.FC = () => {
                             開院後はこのホームページでオンライン予約が出来ます。<br />
                             皆さまのご来院をお待ちしております！
                         </p>
-                        <div className="flex justify-center items-center py-14 text-white">
-                            <button className="py-3 px-10 md:px-20 rounded-lg shadow-md bg-theme flex">
-                                詳しく見る
-                                <MdOutlineNavigateNext size={25} color="white"/>
-                            </button>
-                        </div>
+
+                        {/* 次へボタンが有りなら表示 */}
+                        {isNextButton &&
+                            <div className="flex justify-center items-center py-14 text-white">
+                                <button
+                                    className="py-3 px-10 md:px-20 rounded-lg shadow-md bg-theme flex"
+                                    onClick={() => { router.push("/aboutDirector"); }}
+                                >
+                                    詳しく見る
+                                    <MdOutlineNavigateNext size={25} color="white" />
+                                </button>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>
