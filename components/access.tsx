@@ -24,7 +24,7 @@ const Access = () => {
             <h1 className="text-center text-4xl pb-2 text-gray-500">アクセス</h1>
             <h2 className="text-center text-2xl pb-10 text-gray-400">Access</h2>
 
-            <div className="px-3 font-sans">
+            <div className="px-3 font-sans lg:px-20">
                 {accessData.map((data, index) => (
                     <div
                         key={index}
@@ -39,7 +39,7 @@ const Access = () => {
                     </div>
                 ))}
             </div>
-            <div className="px-5 mt-2 md:flex md:items-start">
+            <div className="px-5 my-5 md:flex md:items-start">
                 <img className="w-full md:w-1/2 object-contain md:flex-shrink-0 md:h-[500px]" src="/アクセス地図.jpg" alt="" />
                 <iframe
                     className="md:hidden"
