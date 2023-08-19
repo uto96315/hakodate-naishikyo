@@ -12,6 +12,7 @@ import Movies from '../../components/movies';
 import ButtonAreaForSM from '../../components/buttonAreaForSM';
 import Sidebar from '../../components/sidebar';
 import AboutClinic from '../../components/aboutClinic';
+import Access from '../../components/access';
 
 
 export default function Home() {
@@ -52,8 +53,7 @@ export default function Home() {
         <Message isNextButton={true} />
         {/* <Movies /> */}
         <AboutClinic />
-
-        <div className='min-h-screen'></div>
+        <Access />
       </div>
       {sidebarIsOpen &&
         <div className='bg-white fixed right-0 top-0 z-50'>

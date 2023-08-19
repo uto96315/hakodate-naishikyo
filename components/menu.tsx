@@ -11,7 +11,7 @@ const Menu = () => {
         {
             jap: "アクセス",
             eng: "Access",
-            route: "",
+            route: "access",
         },
         {
             jap: "内視鏡検査について",
