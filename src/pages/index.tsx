@@ -37,29 +37,29 @@ export default function Home() {
   //     <PassArea pass={password} setPass={setPassword} passCheck={passCheck} />
   //   );
   // } else {
-    return (
-      <main className='font-serif'>
-        <div>
-          <div className={`${sidebarIsOpen && "bg-gray-500 bg-opacity-60 fixed w-screen h-screen z-40"}`}></div>
-          <Header toggleSidebar={toggleSidebar} sidebarIsOpen={sidebarIsOpen} />
-          <SlickArea />
-          <ButtonAreaForPC />
-          <ButtonAreaForSM />
-          <Menu />
+  return (
+    <main className='font-serif'>
+      <div>
+        <div className={`${sidebarIsOpen && "bg-gray-500 bg-opacity-60 fixed w-screen h-screen z-40"}`}></div>
+        <Header toggleSidebar={toggleSidebar} sidebarIsOpen={sidebarIsOpen} />
+        <SlickArea />
+        <ButtonAreaForPC />
+        <ButtonAreaForSM />
+        <Menu />
 
-          {/* 以下本体 */}
-          <News />
-          <Message />
-          <Movies />
-          <AboutClinic />
+        {/* 以下本体 */}
+        <News />
+        <Message isNextButton={true} />
+        {/* <Movies /> */}
+        <AboutClinic />
 
-          <div className='min-h-screen'></div>
-        </div>
-        {sidebarIsOpen &&
-          <div className='bg-white fixed right-0 top-0 z-50'>
-            <Sidebar toggleSidebar={toggleSidebar} />
-          </div>}
-      </main>
-    );
-  }
+        <div className='min-h-screen'></div>
+      </div>
+      {sidebarIsOpen &&
+        <div className='bg-white fixed right-0 top-0 z-50'>
+          <Sidebar toggleSidebar={toggleSidebar} />
+        </div>}
+    </main>
+  );
+}
 // }
