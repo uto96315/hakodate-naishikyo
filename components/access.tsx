@@ -40,7 +40,7 @@ const Access = () => {
                 ))}
             </div>
             <div className="px-5 my-5 md:flex md:items-start">
-                <img className="w-full md:w-1/2 object-cover md:flex-shrink-0 md:h-[500px] mb-5 md:mb-0" src="/医院地図.svg" alt="" />
+                <img className="w-full md:w-1/2 object-contain md:flex-shrink-0 md:h-[500px] mb-5 md:mb-0" src="/医院地図.svg" alt="" />
                 <iframe
                     className="md:hidden"
                     src={mapSource}
