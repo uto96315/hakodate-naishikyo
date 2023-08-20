@@ -1,3 +1,4 @@
+import EndoscopyFeature from "../../components/endoscoryFeature";
 import DownloadButton from "../../components/v1/downloadButton";
 
 type Props = {
@@ -6,12 +7,15 @@ type Props = {
 
 const AboutEndoscopy: React.FC<Props> = () => {
     return (
-        <div className="bg-slate-100 min-h-screen w-full">
-            これは内視鏡検査についてのページです
+        <div className="bg-slate-100 min-h-screen w-full pt-10">
+            <h1 className="text-center text-4xl pb-2 text-gray-500">内視鏡検査</h1>
+            <h2 className="text-center text-2xl pb-10 text-gray-400">Endoscopy</h2>
+
+            <EndoscopyFeature />
 
             {/* ダウンロード部分 */}
             <div className="border-t-2  mt-10 py-5 px-10">
-                <h2 className="lg:text-lg pt-5 pb-16 text-center">各種検査についての説明書及び同意書は以下のボタンからダウンロードしてください。</h2>
+                <h2 className="lg:text-lg pt-5 pb-5 lg:pb-16 text-center">各種検査についての説明書及び同意書は以下のボタンからダウンロードしてください。</h2>
 
 
                 <div className="flex flex-col lg:flex-row justify-center pb-10">

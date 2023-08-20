@@ -14,7 +14,7 @@ const medicalDepartmentData = [
 
 const AboutClinic = () => {
     return (
-        <div className="" id="aboutClinic">
+        <div className="pb-10" id="aboutClinic">
             {/* ここにロゴ */}
             <div className="flex justify-center pb-10">
                 <img
@@ -25,11 +25,14 @@ const AboutClinic = () => {
             </div>
 
             <div className="md:flex md:items-start">
-                <img
-                    src="/診療時間表.svg"
-                    alt=""
-                    className="w-full px-10 md:w-2/5 md:flex-1"
-                />
+                <div className="md:flex-1 md:flex md:flex-col md:items-center">
+                    <img
+                        src="/診療時間表.svg"
+                        alt=""
+                        className="w-full px-10"
+                    />
+                    <p className="font-sans text-center pt-2 lg:py-5 md:text-lg">※第1、3、5土曜日は16:00までの診療となります。</p>
+                </div>
                 <div className="flex-1">
                     <div className="py-5 md:py-0 md:pr-20 font-sans px-10 md:px-2">
                         <h3 className="border-b-2 py-1 text-lg">休診日</h3>
