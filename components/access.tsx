@@ -50,7 +50,7 @@ const Access = () => {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade">
-                </iframe>
+                </iframe>c
                 <iframe
                     className="hidden md:block"
                     src={mapSource}

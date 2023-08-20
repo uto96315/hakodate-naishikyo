@@ -25,7 +25,7 @@ const featuresData = [
 
 const ClinicFeatures = () => {
     return (
-        <div className="mt-10 mb-32">
+        <div className="mt-10 mb-10">
             <h1 className="text-center text-4xl pb-2 text-gray-500">当院の特徴</h1>
             <h2 className="text-center text-2xl pb-10 text-gray-400">Features</h2>
             {/* <div className="flex justify-center">

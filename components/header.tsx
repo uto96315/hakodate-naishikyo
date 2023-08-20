@@ -14,9 +14,9 @@ const Header: React.FC<Props> = ({ toggleSidebar, sidebarIsOpen }) => {
          md:absolute md:top-0 md:left-0 md:w-1/4 md:z-50 md:py-5
         ">
             <img
-                src="/logo-flex-white.png"
+                src="/ロゴ.svg"
                 alt="まべ五稜郭・内視鏡クリニック"
-                className="w-4/5"
+                className="h-12"
             />
             <button className="md:hidden" onClick={toggleSidebar}>
                 <AiOutlineMenu size={30} color="white" />
