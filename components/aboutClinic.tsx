@@ -14,7 +14,7 @@ const medicalDepartmentData = [
 
 const AboutClinic = () => {
     return (
-        <div className="">
+        <div className="" id="aboutClinic">
             {/* ここにロゴ */}
             <div className="flex justify-center pb-10">
                 <img
