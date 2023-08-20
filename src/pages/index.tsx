@@ -36,9 +36,9 @@ export default function Home() {
         {/* 以下本体 */}
         <News />
         <Message isNextButton={true} isDetail={false} />
-        <AboutClinic />
         <ClinicFeatures />
         <Movies />
+        <AboutClinic />
         <Access />
         <footer className='bg-theme py-2 text-white text-center'>
           ©︎2023 まべ五稜郭消化器・内視鏡クリニック

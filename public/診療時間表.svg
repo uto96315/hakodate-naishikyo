@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.44 76.27">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #231815;
+        font-family: NotoSansJP-Regular, 'NotoSansJP Regular-90ms-RKSJ-H';
+        font-size: 8px;
+      }
+
+      .cls-3 {
+        fill: #040000;
+      }
+
+      .cls-4 {
+        stroke-width: .33px;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: #040000;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-5, .cls-6 {
+        stroke-width: .15px;
+      }
+
+      .cls-6 {
+        stroke: #595757;
+      }
+    </style>
+  </defs>
+  <rect class="cls-6" x=".17" y=".17" width="69.54" height="17.76"/>
+  <rect class="cls-5" x="69.71" y=".17" width="29.09" height="46.85"/>
+  <rect class="cls-5" x="98.8" y=".17" width="29.1" height="46.85"/>
+  <rect class="cls-5" x="127.9" y=".17" width="29.1" height="46.85"/>
+  <rect class="cls-5" x="156.99" y=".17" width="29.09" height="46.85"/>
+  <rect class="cls-5" x="186.09" y=".16" width="29.09" height="46.85"/>
+  <rect class="cls-5" x="215.18" y=".16" width="29.09" height="46.85"/>
+  <polyline class="cls-5" points="98.8 76.11 98.8 47.02 127.9 47.02 127.9 76.11"/>
+  <polyline class="cls-5" points="156.99 76.11 156.99 47.02 186.09 47.02 186.09 76.11"/>
+  <polyline class="cls-5" points="215.18 76.1 215.18 47.01 244.27 47.01 244.27 76.1"/>
+  <rect class="cls-5" x=".17" y="17.92" width="244.11" height="29.09"/>
+  <rect class="cls-5" x=".17" y="47.02" width="244.11" height="29.09"/>
+  <rect class="cls-5" x="69.71" y="47.02" width="174.57" height="29.09"/>
+  <rect class="cls-4" x=".17" y=".17" width="244.11" height="75.94"/>
+  <g>
+    <text class="cls-2" transform="translate(80.33 12.93)"><tspan x="0" y="0">月</tspan></text>
+    <text class="cls-1" transform="translate(109.35 12.93)"><tspan x="0" y="0">火</tspan></text>
+    <text class="cls-1" transform="translate(138.45 12.93)"><tspan x="0" y="0">水</tspan></text>
+    <text class="cls-1" transform="translate(167.54 12.93)"><tspan x="0" y="0">木</tspan></text>
+    <text class="cls-1" transform="translate(196.63 12.93)"><tspan x="0" y="0">金</tspan></text>
+    <text class="cls-1" transform="translate(225.73 12.93)"><tspan x="0" y="0">土</tspan></text>
+  </g>
+  <text class="cls-1" transform="translate(14.02 42.11)"><tspan x="0" y="0">8:00〜12:00</tspan></text>
+  <text class="cls-1" transform="translate(27.3 30.91)"><tspan x="0" y="0">午前</tspan></text>
+  <text class="cls-1" transform="translate(11.81 71.29)"><tspan x="0" y="0">13:00〜17:00</tspan></text>
+  <text class="cls-1" transform="translate(27.88 60.08)"><tspan x="0" y="0">午後</tspan></text>
+  <path class="cls-3" d="m90.43,32.47c0-3.41-2.77-6.18-6.18-6.18s-6.18,2.77-6.18,6.18,2.77,6.18,6.18,6.18,6.18-2.77,6.18-6.18Z"/>
+  <path class="cls-3" d="m119.53,32.47c0-3.41-2.77-6.18-6.18-6.18s-6.18,2.77-6.18,6.18,2.77,6.18,6.18,6.18,6.18-2.77,6.18-6.18Z"/>
+  <path class="cls-3" d="m148.62,32.47c0-3.41-2.77-6.18-6.18-6.18s-6.18,2.77-6.18,6.18,2.77,6.18,6.18,6.18,6.18-2.77,6.18-6.18Z"/>
+  <path class="cls-3" d="m206.8,32.47c0-3.41-2.77-6.18-6.18-6.18s-6.18,2.77-6.18,6.18,2.77,6.18,6.18,6.18,6.18-2.77,6.18-6.18Z"/>
+  <path class="cls-3" d="m235.89,32.47c0-3.41-2.77-6.18-6.18-6.18s-6.18,2.77-6.18,6.18,2.77,6.18,6.18,6.18,6.18-2.77,6.18-6.18Z"/>
+  <path class="cls-3" d="m90.43,61.56c0-3.41-2.77-6.18-6.18-6.18s-6.18,2.77-6.18,6.18,2.77,6.18,6.18,6.18,6.18-2.77,6.18-6.18Z"/>
+  <path class="cls-3" d="m119.53,61.56c0-3.41-2.77-6.18-6.18-6.18s-6.18,2.77-6.18,6.18,2.77,6.18,6.18,6.18,6.18-2.77,6.18-6.18Z"/>
+  <path class="cls-3" d="m148.62,61.56c0-3.41-2.77-6.18-6.18-6.18s-6.18,2.77-6.18,6.18,2.77,6.18,6.18,6.18,6.18-2.77,6.18-6.18Z"/>
+  <path class="cls-3" d="m206.8,61.56c0-3.41-2.77-6.18-6.18-6.18s-6.18,2.77-6.18,6.18,2.77,6.18,6.18,6.18,6.18-2.77,6.18-6.18Z"/>
+  <path class="cls-3" d="m177.25,66.48l-.78.8-4.94-4.94-4.92,4.94-.78-.8,4.92-4.92-4.92-4.92.78-.8,4.92,4.94,4.94-4.94.78.78-4.92,4.94,4.92,4.92Z"/>
+  <path class="cls-3" d="m177.25,37.39l-.78.8-4.94-4.94-4.92,4.94-.78-.8,4.92-4.92-4.92-4.92.78-.8,4.92,4.94,4.94-4.94.78.78-4.92,4.94,4.92,4.92Z"/>
+  <polygon class="cls-3" points="229.71 67.74 222.84 67.74 226.27 61.79 229.71 55.84 233.14 61.79 236.58 67.74 229.71 67.74"/>
+</svg>
