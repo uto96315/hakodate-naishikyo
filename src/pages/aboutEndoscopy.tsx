@@ -36,13 +36,6 @@ const AboutEndoscopy: React.FC<Props> = () => {
                             <DownloadButton text="抗血栓薬を服用中の方へ" filepath="/抗血栓薬休薬の可否について.pdf" />
                         </div>
                     </div>
-
-                    {/* <div className="flex-1 text-center mt-10 lg:mt-0">
-                        <h3 className="text-lg pb-3">抗血栓薬を服用中の方へ</h3>
-                        <div className="flex flex-col justify-center items-center">
-                            <DownloadButton text="抗血栓薬休薬の可否について" filepath="/抗血栓薬休薬の可否について.pdf" />
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </div>

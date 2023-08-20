@@ -6,7 +6,7 @@ import Profile from "../../components/profile";
 const AboutDirector = () => {
     return (
         <div>
-            <Message isNextButton={false} />
+            <Message isNextButton={false} isDetail={true}/>
             <Biography />
             <Profile />
         </div>
