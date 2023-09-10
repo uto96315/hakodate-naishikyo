@@ -90,7 +90,7 @@ const featureData = [
 const EndoscopyFeature = () => {
     return (
         <div className="">
-            <h2 className="text-xl mx-10 pb-2 mb-10 text-center border-b-2">
+            <h2 className="text-2xl text-stone-500 mx-10 pb-2 mb-10 text-center border-b-2">
                 当院の内視鏡検査の特徴
             </h2>
 

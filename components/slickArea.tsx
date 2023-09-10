@@ -25,7 +25,7 @@ const SlickArea: React.FC = () => {
         ),
     };
 
-    const imgs = ["/slickMock01.jpg", "/slickMock02.jpg"];
+    const imgs = ["/建物外観.jpg"];
 
     return (
         <div className='md:h-1/3 md:px-20 mt-16'>
