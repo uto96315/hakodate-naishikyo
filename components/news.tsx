@@ -11,7 +11,7 @@ const News = () => {
             <div className="pt-5">
                 {
                     newsMock.map((news, index) => (
-                        <div key={index} className="py-2 font-sans hover:bg-gray-200 px-5 rounded cursor-pointer">
+                        <div key={index} className="py-2 font-sans px-5 rounded cursor-pointer">
                             <div className="flex space-x-4 text-lg">
                                 <p className="text-gray-500">
                                     {news.date}

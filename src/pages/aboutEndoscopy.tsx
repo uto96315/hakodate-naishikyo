@@ -28,7 +28,6 @@ const AboutEndoscopy: React.FC<Props> = () => {
                         <div className="flex flex-col justify-center items-center">
                             <DownloadButton text="説明書ダウンロード" filepath="/上部内視鏡説明書.pdf" />
                             <DownloadButton text="同意書ダウンロード" filepath="/上部内視鏡同意書.pdf" />
-
                         </div>
                     </div>
 
@@ -38,6 +37,7 @@ const AboutEndoscopy: React.FC<Props> = () => {
                         <div className="flex flex-col justify-center items-center">
                             <DownloadButton text="説明書ダウンロード" filepath="/大腸内視鏡説明書.pdf" />
                             <DownloadButton text="同意書ダウンロード" filepath="/大腸内視鏡同意書.pdf" />
+                            <DownloadButton text="大腸内視鏡検査を受けられる方へ" filepath="/大腸内視鏡検査を受けられる方へ.pdf" />
                             <p className="text-center px-5 md:px-20 pt-10">
                                 ※ 抗血栓薬服用中の方へ：大腸内視鏡では、原則抗血栓薬を当日朝のみ休薬にしていますが、念のため下記をダウンロードして印刷し、主治医に確認ください
                             </p>

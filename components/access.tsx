@@ -17,7 +17,7 @@ const accessData = [
 ];
 
 const Access = () => {
-    const mapSource = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d719.8317037272816!2d140.75463934132497!3d41.791979317440386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9ef46e53084c07%3A0xb106e22ccbb47d25!2z44CSMDQwLTAwMDEg5YyX5rW36YGT5Ye96aSo5biC5LqU56ic6YOt55S677yT77yU4oiS77yR77ySIOOCteODs-OCu-OCpOiqv-WJpOiWrOWxgA!5e0!3m2!1sja!2sjp!4v1684241620716!5m2!1sja!2sjp";
+    const mapSource = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11898.657610395616!2d140.7544425!3d41.7924457!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9ef56a8193080b%3A0xf729a88225bd2330!2z44G-44G55LqU56ic6YOt5raI5YyW5Zmo44O75YaF6KaW6Y-h44Kv44Oq44OL44OD44Kv!5e0!3m2!1sja!2sjp!4v1694768287048!5m2!1sja!2sjp";
 
     return (
         <div className="mt-16" id="access">
@@ -50,7 +50,7 @@ const Access = () => {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade">
-                </iframe>c
+                </iframe>
                 <iframe
                     className="hidden md:block"
                     src={mapSource}

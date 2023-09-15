@@ -14,6 +14,9 @@ import Sidebar from '../../components/sidebar';
 import AboutClinic from '../../components/aboutClinic';
 import Access from '../../components/access';
 import ClinicFeatures from '../../components/clinicFeatures';
+import { BsFillTelephoneForwardFill } from "react-icons/bs";
+import { HiDesktopComputer, HiOutlineClipboardList } from "react-icons/hi";
+import EndoscopyArea from '../../components/endoscopyArea';
 
 
 export default function Home() {
@@ -28,8 +31,17 @@ export default function Home() {
       <div>
         <div className={`${sidebarIsOpen && "bg-gray-500 bg-opacity-60 fixed w-screen h-screen z-40"}`}></div>
         <Header toggleSidebar={toggleSidebar} sidebarIsOpen={sidebarIsOpen} />
-        <SlickArea />
-        <ButtonAreaForPC />
+
+        {/* PC用スリック */}
+        <div className='hidden md:block'>
+          <SlickArea imgsUrl={["/slick01.png", "/slick01.png"]} />
+        </div>
+
+        {/* PC用スリック */}
+        <div className="md:hidden">
+          <SlickArea imgsUrl={["/smSlick01.png", "/smSlick01.png"]} />
+        </div>
+        {/* <ButtonAreaForPC /> */}
         <ButtonAreaForSM />
         <Menu />
 
@@ -37,7 +49,9 @@ export default function Home() {
         <News />
         <Message isNextButton={true} isDetail={false} />
         <ClinicFeatures />
+        <EndoscopyArea />
         <AboutClinic />
+
         {/* <Movies /> */}
         <Access />
         <footer className='bg-theme py-2 text-white text-center'>
