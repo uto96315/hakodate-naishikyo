@@ -10,6 +10,12 @@ const Menu = () => {
             link: "aboutClinic",
         },
         {
+            jap: "予約から受診の流れ",
+            eng: "how to reserve",
+            route: "/",
+            link: "",
+        },
+        {
             jap: "内視鏡検査について",
             eng: "Endoscope",
             route: "/aboutEndoscopy",
