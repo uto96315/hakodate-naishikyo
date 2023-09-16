@@ -24,7 +24,7 @@ const Header: React.FC<Props> = ({ toggleSidebar, sidebarIsOpen }) => {
             <div className="hidden md:flex md:space-x-4">
                 <HeaderMenuButton icon={<HiDesktopComputer size={30} />} text="WEB予約" onClick={() => { window.open("https://ssc.doctorqube.com/hakodate-naishikyou/"); }} />
                 <HeaderMenuButton icon={<HiOutlineClipboardList size={30} />} text="WEB問診" onClick={() => { window.open("https://symview.me/medical_interview_flows/hg07928/public/?url_kind=1"); }} />
-                <HeaderMenuButton icon={<BsFillTelephoneFill />} text="お問い合わせ" onClick={() => window.location.href = 'tel:0138-86-7633'} />
+                {/* <HeaderMenuButton icon={<BsFillTelephoneFill />} text="お問い合わせ" onClick={() => window.location.href = 'tel:0138-86-7633'} /> */}
             </div>
             <button className="md:hidden" onClick={toggleSidebar}>
                 <AiOutlineMenu size={30} color="white" />

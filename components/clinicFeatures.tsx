@@ -5,24 +5,18 @@ import YouTubeVideo from "./v1/youtube";
 const featuresData = [
     {
         id: 1,
-        title: "オンラインに対応",
-        description: "オンライン予約、web問診、オンライン診療の導入 診察、胃カメラ、大腸内視鏡の予約は24時間いつでもPC，スマホから",
-        imgPath: "/クリニックの特徴例.jpg",
+        title: "土曜診療・オンラインに対応",
+        description: "土曜日も診察・内視鏡検査が可能。WEB予約、web問診、オンライン診療を導入。 診察、内視鏡検査の予約は24時間いつでもPC、スマホから",
+        imgPath: "/オンライン診療.png",
     },
     {
         id: 2,
-        title: "時間を取らない診療",
+        title: "できるだけ少ない受診回数",
         description: "受診日当日に検査結果も説明、大腸ポリープ切除も日帰りで可能",
         imgPath: "/特徴02.png",
     },
     {
         id: 3,
-        title: "土曜・時間外の診療",
-        description: "土曜日の内視鏡検査や、時間外のオンライン診療",
-        imgPath: "/クリニックの特徴例.jpg",
-    },
-    {
-        id: 4,
         title: "待ち時間の過ごし方",
         description: "院内の待合室に電源付きのテーブルも用意していますので、お忙しい方も時間のロスなくお待ち頂けます。",
         imgPath: "/待合室.png",

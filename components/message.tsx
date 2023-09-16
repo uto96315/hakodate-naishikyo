@@ -48,7 +48,7 @@ const Message: React.FC<Props> = ({ isNextButton, isDetail }) => {
                         {isNextButton &&
                             <div className="flex justify-center items-center py-14 text-white">
                                 <button
-                                    className="py-3 px-10 md:px-20 rounded-lg shadow-md bg-theme flex"
+                                    className="py-3 px-10 md:px-20 rounded-lg shadow-md bg-theme flex justify-center items-center"
                                     onClick={() => { router.push("/aboutDirector"); }}
                                 >
                                     詳しく見る

@@ -1,26 +1,30 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { useRouter } from "next/router";
+import { MdOutlineNavigateNext } from "react-icons/md";
+
 
 const EndoscopyArea = () => {
+    const router = useRouter();
     const featureData = [
         {
             id: "01",
             text: "安心の技術・診断",
-            description: "内視鏡検査歴30年の専門医が丁寧に行うことで可能となる高度な内視鏡検査で安心して検査を受けることができます。",
+            description: "内視鏡検査歴３０年の専門医が丁寧に行う高度な内視鏡で安心して検査を受けることができます。",
             imgPath: "/内視鏡特徴01.png",
             detailLink: null,
         },
         {
             id: "02",
             text: "検査中も不安と苦痛のない内視鏡",
-            description: "専門のスタッフが丁寧にご説明し、検査中もサポート致します。\n痛みに弱い方でも大丈夫。楽に内視鏡操作を受けるコツを伝授致します。鎮静・鎮痛剤にも、もちろん対応しています。",
+            description: "専門のスタッフが丁寧に説明し、検査中もサポートいたします。\n痛みに弱い方でも大丈夫。楽に内視鏡操作を受けるコツを伝授いたします。\n鎮静・鎮痛剤にも、もちろん対応しています。",
             imgPath: "/内視鏡特徴02.png",
             detailLink: null,
         },
         {
             id: "03",
             text: "最新の内視鏡",
-            description: "オリンパス社製の最新システムを導入しました。明るいハイビジョンNBI、 TXIなどの最新技術でより確実な検査を。",
+            description: "オリンパス社製の最新システムを導入しました。\n細くても明るいハイビジョン、NBIなどの最新技術でより確実な検査を。",
             imgPath: "/内視鏡特徴03.png",
             detailLink: null,
         },
@@ -34,35 +38,35 @@ const EndoscopyArea = () => {
         {
             id: "05",
             text: "ピロリ菌の専門（当日検査・治療）",
-            description: "各種ピロリ菌検査を導入しております。\n当日に診断して確実に除去。",
+            description: "各種ピロリ菌検査を導入しております。\n当日に診断して確実に治療。",
             imgPath: "/内視鏡特徴05.png",
             detailLink: "",
         },
         {
             id: "06",
             text: "確実な洗浄",
-            description: "専任スタッフが丁寧に洗浄致します。\nオリンパス社製最新洗浄機（過酢酸）を使用",
+            description: "専任スタッフが丁寧に洗浄いたします。\nオリンパス社製最新洗浄機（過酢酸）を使用して確実な洗浄。",
             imgPath: "/内視鏡特徴06.png",
             detailLink: null,
         },
         {
             id: "07",
             text: "楽な大腸内視鏡",
-            description: "飲みやすい洗腸剤を夜、朝2回にわけてCO2送気で検査中、検査後の張り少なく",
+            description: "飲みやすい洗腸剤を夜、朝2回に分けることで楽に。\n安心の技術と細い内視鏡・CO₂送気で検査中・検査後も楽に。",
             imgPath: "/内視鏡特徴07.png",
             detailLink: null,
         },
         {
             id: "08",
             text: "当日ポリープ切除",
-            description: "約半数の患者様に見つかる大腸種線（ポリープ）は当日切除可能",
+            description: "約半数の患者様に見つかる大腸ポリープ(腺腫)を検査当日に切除可能。",
             imgPath: "/内視鏡特徴08.png",
             detailLink: null,
         },
         {
             id: "09",
             text: "専門施設と連携",
-            description: "内視鏡切除、外科手術に精通した全国の医師病院と連携。\n生体やポリープ切除で得られた検体は全国の消化器専門の病理医が診断します。",
+            description: "内視鏡切除、外科手術に精通した全国の医師、病院と連携。\n生検やポリープ切除で得られた検体は消化器専門の病理医が診断します。",
             imgPath: "/内視鏡特徴09.png",
             detailLink: null,
         },
@@ -91,6 +95,16 @@ const EndoscopyArea = () => {
                         </div>
                     ))
                 }
+            </div>
+
+            <div className="flex justify-center items-center py-14 text-white">
+                <button
+                    className="py-3 px-10 md:px-20 rounded-lg shadow-md bg-theme flex justify-center items-center"
+                    onClick={() => { router.push("/aboutEndoscopy"); }}
+                >
+                    内視鏡検査について詳しく見る
+                    <MdOutlineNavigateNext size={25} color="white" />
+                </button>
             </div>
         </div>
     );
