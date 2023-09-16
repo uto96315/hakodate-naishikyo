@@ -18,8 +18,8 @@ const Menu = () => {
         {
             jap: "内視鏡検査について",
             eng: "Endoscope",
-            route: "/aboutEndoscopy",
-            link: "",
+            route: "",
+            link: "endoscopy",
         },
         {
             jap: "予防医療について",
@@ -48,7 +48,7 @@ const Menu = () => {
     const jumpToSection = (sectionId:string) => {
         const element = document.getElementById(sectionId);
         if (element) {
-            const offset = 50;  // ここでオフセット値を設定。例として50px上で止めたい場合
+            const offset = 100;  // ここでオフセット値を設定。例として50px上で止めたい場合
             const y = element.getBoundingClientRect().top + window.pageYOffset - offset;
             window.scrollTo({ top: y, behavior: 'smooth' });
         }

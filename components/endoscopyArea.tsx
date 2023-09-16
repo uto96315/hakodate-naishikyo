@@ -73,7 +73,7 @@ const EndoscopyArea = () => {
     ];
 
     return (
-        <div className="pt-10 pb-20 md:px-10">
+        <div className="pt-10 pb-20 md:px-10" id="endoscopy">
             <div>
                 <h1 className="text-center text-4xl pb-2 text-gray-500">内視鏡検査の特徴</h1>
                 <h2 className="text-center text-2xl pb-5 text-gray-400">Endoscopy</h2>

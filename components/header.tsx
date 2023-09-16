@@ -14,7 +14,7 @@ const Header: React.FC<Props> = ({ toggleSidebar, sidebarIsOpen }) => {
     return (
         <div className="
         w-screen bg-theme py-3 px-5 fixed top-0 right-0 z-20 flex items-center justify-between 
-         md:fixed md:top-0 md:left-0 md:w-full md:z-50 md:py-5
+         md:fixed md:top-0 md:left-0 md:w-full md:z-50 md:py-2
         ">
             <img
                 src="/ロゴ.svg"
