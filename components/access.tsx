@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-
+import { useRouter } from "next/router";
 const accessData = [
     {
         title: "所在地",
@@ -17,6 +17,7 @@ const accessData = [
 ];
 
 const Access = () => {
+    const router = useRouter();
     const mapSource = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11898.657610395616!2d140.7544425!3d41.7924457!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9ef56a8193080b%3A0xf729a88225bd2330!2z44G-44G55LqU56ic6YOt5raI5YyW5Zmo44O75YaF6KaW6Y-h44Kv44Oq44OL44OD44Kv!5e0!3m2!1sja!2sjp!4v1694768287048!5m2!1sja!2sjp";
 
     return (
@@ -61,6 +62,15 @@ const Access = () => {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade">
                 </iframe>
+            </div>
+
+            <div className="flex justify-center mb-10">
+                <button
+                    onClick={() => { router.push("/access"); }}
+                    className="text-lg rounded-md py-2 px-5 bg-theme text-white shadow hover:shadow-md"
+                >
+                    アクセスを詳しく見る
+                </button>
             </div>
         </div>
     );

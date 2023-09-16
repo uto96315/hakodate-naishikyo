@@ -9,14 +9,7 @@ type Props = {
 
 };
 
-const AboutEndoscopy: React.FC<Props> = () => {
-    const router = useRouter();
-    const menus = [
-        { title: "検査を受けるまでの流れ", id: "flow" },
-        { title: "大切なお知らせ", id: "must_read" },
-        { title: "同意書ダウンロードへ", id: "consent_form" },
-    ];
-    const jumpToSection = (sectionId: string) => {
+export const jumpToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId);
         if (element) {
             const offset = 20;  // ここでオフセット値を設定。例として50px上で止めたい場合
@@ -24,6 +17,14 @@ const AboutEndoscopy: React.FC<Props> = () => {
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
     };
+
+const AboutEndoscopy: React.FC<Props> = () => {
+    const router = useRouter();
+    const menus = [
+        { title: "検査を受けるまでの流れ", id: "flow" },
+        { title: "大切なお知らせ", id: "must_read" },
+        { title: "同意書ダウンロードへ", id: "consent_form" },
+    ];
 
     return (
         <div className="bg-slate-100 min-h-screen w-full pt-5">
