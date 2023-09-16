@@ -9,40 +9,54 @@ type Props = {
 
 const Sidebar: React.FC<Props> = ({ toggleSidebar }) => {
     const router = useRouter();
+    const jumpToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            const offset = 100;  // ここでオフセット値を設定。例として50px上で止めたい場合
+            const y = element.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+    }
+
     const menus = [
         {
             title: "ホーム",
-            destination: "",
+            destination: "/",
+            move: "",
             icon: <AiOutlineClose size={25} />,
         },
         {
             title: "当院について",
             destination: "",
+            move: "aboutClinic",
             icon: <AiOutlineClose size={25} />,
         },
         {
             title: "予防医療について",
             destination: "",
+            move: "",
             icon: <AiOutlineClose size={25} />,
         },
+        // {
+        //     title: "胃カメラについて",
+        //     destination: "",
+        //     icon: <AiOutlineClose size={25} />,
+        // },
         {
-            title: "胃カメラ",
-            destination: "",
+            title: "内視鏡について",
+            destination: "/aboutEndoscopy",
+            move: "",
             icon: <AiOutlineClose size={25} />,
         },
-        {
-            title: "内視鏡",
-            destination: "",
-            icon: <AiOutlineClose size={25} />,
-        },
-        {
-            title: "自由診療について",
-            destination: "",
-            icon: <AiOutlineClose size={25} />,
-        },
+        // {
+        //     title: "自由診療について",
+        //     destination: "",
+        //     icon: <AiOutlineClose size={25} />,
+        // },
         {
             title: "アクセス",
             destination: "",
+            move: "access",
             icon: <AiOutlineClose size={25} />,
         },
     ];
@@ -62,7 +76,11 @@ const Sidebar: React.FC<Props> = ({ toggleSidebar }) => {
             {menus.map((menu, index) => (
                 <div
                     key={index}
-                    onClick={() => { router.push(menu.destination); }}
+                    onClick={() => { 
+                        console.log("押された");
+                        toggleSidebar();
+                        menu.destination === "" ? jumpToSection(menu.move) : null
+                    }}
                     className="py-4 px-10 border-b-2 text-lg flex justify-center items-center"
                 >
                     {menu.title}

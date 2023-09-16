@@ -14,59 +14,55 @@ import Sidebar from '../../components/sidebar';
 import AboutClinic from '../../components/aboutClinic';
 import Access from '../../components/access';
 import ClinicFeatures from '../../components/clinicFeatures';
+import { BsFillTelephoneForwardFill } from "react-icons/bs";
+import { HiDesktopComputer, HiOutlineClipboardList } from "react-icons/hi";
+import EndoscopyArea from '../../components/endoscopyArea';
 
 
 export default function Home() {
   const pass = "vneorbnw9ewjsv";
-  const [password, setPassword] = useState("");
-  const [passCheckResult, setPassCheckResult] = useState(false);
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
   const toggleSidebar = () => {
     setSidebarIsOpen(!sidebarIsOpen);
   };
 
-  const passCheck = () => {
-    if (pass === password) {
-      setPassCheckResult(true);
-    } else {
-      alert("パスワードが違います");
-      return;
-    }
-  };
-
-  // if (!passCheckResult) {
-  //   return (
-  //     <PassArea pass={password} setPass={setPassword} passCheck={passCheck} />
-  //   );
-  // } else {
   return (
     <main className='font-serif'>
       <div>
         <div className={`${sidebarIsOpen && "bg-gray-500 bg-opacity-60 fixed w-screen h-screen z-40"}`}></div>
         <Header toggleSidebar={toggleSidebar} sidebarIsOpen={sidebarIsOpen} />
-        <SlickArea />
-        <ButtonAreaForPC />
+
+        {/* PC用スリック */}
+        <div className='hidden md:block'>
+          <SlickArea imgsUrl={["/slick01.png", "/slick02.png"]} />
+        </div>
+
+        {/* PC用スリック */}
+        <div className="md:hidden">
+          <SlickArea imgsUrl={["/smSlick01.png", "/smSlick02.png"]} />
+        </div>
+        {/* <ButtonAreaForPC /> */}
         <ButtonAreaForSM />
         <Menu />
 
         {/* 以下本体 */}
         <News />
-        <Message isNextButton={true} />
-        {/* <Movies /> */}
+        <Message isNextButton={true} isDetail={false} />
+        <ClinicFeatures />
+        <EndoscopyArea />
         <AboutClinic />
-        <ClinicFeatures/>
+
+        {/* <Movies /> */}
         <Access />
-        <footer className='bg-theme py-2 text-white text-center'>
+        <footer className='bg-theme pt-2 text-white text-center'>
           ©︎2023 まべ五稜郭消化器・内視鏡クリニック
         </footer>
-        <div className='h-20'>
-          {/* ここは後で消す */}
-        </div>
       </div>
       {sidebarIsOpen &&
         <div className='bg-white fixed right-0 top-0 z-50'>
           <Sidebar toggleSidebar={toggleSidebar} />
-        </div>}
+        </div>
+      }
     </main>
   );
 }

@@ -4,16 +4,30 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const SlickArea: React.FC = () => {
+type Props = {
+    imgsUrl: string[];
+}
+
+const SlickArea: React.FC<Props> = ({imgsUrl}) => {
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
+        centerMode: true,
+        centerPadding: "0px",
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 4000,
+        responsive: [
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ],
         appendDots: (dots: React.ReactNode) => (
             <div style={{ position: "relative", bottom: "10px" }}>
                 <ul
@@ -25,12 +39,11 @@ const SlickArea: React.FC = () => {
         ),
     };
 
-    const imgs = ["/slickMock01.jpg", "/slickMock02.jpg"];
 
     return (
-        <div className='md:h-1/3 md:px-20 mt-16'>
+        <div className='md:px-20 mt-16 md:mt-24'>
             <Slider {...settings}>
-                {imgs.map((img, index) => (
+                {imgsUrl.map((img, index) => (
                     <div key={index} className=''>
                         <img
                             src={img}
