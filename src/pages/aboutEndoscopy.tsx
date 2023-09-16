@@ -54,44 +54,59 @@ const AboutEndoscopy: React.FC<Props> = () => {
             <div className="py-10 px-10" id="flow">
                 <h2 className="text-2xl font-bold text-center py-1 mb-4 border-b-2 border-gray-500">検査を受けるまでの流れ</h2>
 
-                {/* step1 */}
-                <div className="mb-5">
-                    <div className="py-2 px-5 bg-white">
-                        <h3 className="text-xl font-semibold pb-2">Step1 検査予約を取る</h3>
-                        <p>ご都合の良い日程から検査日をお選びください。</p>
-                        <p>その後<span className="text-theme">WEB問診</span>の記入をお願いいたします。</p>
-                        <img src="/検査を受ける流れ01.png" alt="" />
+                <div className="grid md:grid-cols-3 gap-3">
+                    {/* step1 */}
+                    <div className="mb-5 md:h-full bg-white">
+                        <div className="py-2 px-5">
+                            <h3 className="text-xl font-semibold pb-2">Step1 検査予約</h3>
+                            <p>ご都合の良い日程から検査日をお選びください。</p>
+                            <p>その後<span className="text-theme">WEB問診</span>の記入をお願いいたします。</p>
+                            <img className="hidden md:block" src="/検査を受ける流れ01.png" alt="" />
 
-                        <div className="flex justify-center mt-3">
+                            {/* <div className="flex justify-center mt-3">
                             <button
                                 className="bg-pink-500 text-lg py-2 px-5 rounded shadow font-bold text-white"
                                 onClick={() => { window.open("https://ssc.doctorqube.com/hakodate-naishikyou/"); }}
                             >
                                 WEB予約へ
                             </button>
+                        </div> */}
                         </div>
                     </div>
-                </div>
 
-                {/* step2 */}
-                <div className="">
-                    <div className="py-2 px-5 bg-white">
-                        <h3 className="text-xl font-semibold pb-2">Step2 説明同意書のダウンロード</h3>
-                        <p>
-                            <span className="border-b border-blue-300 font-semibold" onClick={() => { jumpToSection("consent_form"); }}>
-                                こちら
-                            </span>
-                            から該当する同意書をダウンロード頂き、可能でありましたら印刷後サインしてご持参ください。</p>
-                        <p>その後<span className="text-theme">WEB問診</span>の記入をお願いいたします。</p>
-                        <img src="/検査を受ける流れ02.png" alt="" />
+                    {/* step2 */}
+                    <div className="mb-5 md:h-full bg-white">
+                        <div className="py-2 px-5">
+                            <h3 className="text-xl font-semibold pb-2">Step2 説明同意書</h3>
+                            <p>
+                                <span className="border-b border-blue-300 font-semibold" onClick={() => { jumpToSection("consent_form"); }}>
+                                    こちら
+                                </span>
+                                から該当する説明書・同意書をダウンロード頂きよくご確認ください。</p>
+                            {/* <p>印刷後サインしてご持参ください。</p> */}
+                            <img className="hidden md:block md:mt-10" src="/検査を受ける流れ02.png" alt="" />
 
-                        <div className="flex justify-center mt-3">
+                            {/* <div className="flex justify-center mt-3">
                             <button
                                 className="bg-pink-500 text-lg py-2 px-5 rounded shadow font-bold text-white"
                                 onClick={() => { jumpToSection("consent_form") }}
                             >
                                 ダウンロードへ
                             </button>
+                        </div> */}
+                        </div>
+                    </div>
+
+                    {/* step3 */}
+                    <div className="h-full bg-white">
+                        <div className="py-2 px-5">
+                            <h3 className="text-xl font-semibold pb-2">Step3 検査説明</h3>
+                            <p className="text-lg">次のいずれかの方法で検査の説明を受けます。</p>
+                            <p className="text-lg pt-1">①クリニック受診を予約</p>
+                            <p className="text-lg pt-1">②オンライン受診を予約</p>
+                            <p className="text-lg pt-1">③予約枠が一杯の場合：予約なしでクリニックに直接受診</p>
+                            <p className="text-lg pt-1">※胃カメラの場合は、説明の受診なしで<span className="border-b border-gray-600">前日21:00以降絶食し</span>直接検査に受診することも可能です。</p>
+                            {/* <img src="/検査を受ける流れ02.png" alt="" /> */}
                         </div>
                     </div>
                 </div>
@@ -99,8 +114,22 @@ const AboutEndoscopy: React.FC<Props> = () => {
 
 
             {/* 必読部分 */}
-            <div id="must_read" className="px-10 mt-20">
-                <h2 className="text-2xl font-bold text-center py-1 mb-2 border-b-2 border-gray-500">必ずお読みください</h2>
+            <div id="must_read" className="px-10 mt-20 text-lg">
+                <h2 className="text-2xl font-bold text-center py-1 mb-3 border-b-2 border-gray-500">大切なお知らせ</h2>
+                <div className=" md:px-20">
+                    <p>※当院では忙しい方も内視鏡検査が受けられるよう、<span className="font-bold">WEB予約制</span>にしています。</p>
+                    <p>安心・安全な検査のため<span className="font-bold">年齢制限</span>を設けています。</p>
+                    <p className="mb-3">それ以上の年齢で希望される場合は、事前に診察し相談させて頂きますのでご理解をお願いいたします。</p>
+
+                    <div className="py-2 px-2 bg-white bg-opacity-50">
+                        <p className="pb-1">1.対象年齢：75歳以下</p>
+                        <p className="pb-1">2.腹痛、貧血、血便、便秘、細い便、体重減少など<span className="font-bold border-b border-gray-500">症状がある場合</span>は、
+                            <span className="font-bold border-b border-gray-500">内視鏡検査をwebで予約せず、出来るだけ早く診察</span>を受けて下さい。
+                            診察の予約枠も一杯の場合は、食事をせずに診療している日の早め
+                            の時間に受診して下さい。</p>
+                        <p>3.WEB予約では、同日に上部、大腸を予約しないでください。同一日の検査は原則としてドッグ（自由診療）で行っています。</p>
+                    </div>
+                </div>
             </div>
 
 
