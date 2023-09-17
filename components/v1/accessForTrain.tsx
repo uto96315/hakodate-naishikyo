@@ -22,11 +22,11 @@ const AccessForTrain = () => {
                         <img src="/市電でお越しの方03.png" alt="" className="w-full h-auto" />
                     </div>
                     <div>
-                        <p>③<span className="font-bold border-b border-gray-500">ホテル グランティア</span>と<span className="font-bold border-b border-gray-500">北陸銀行</span>があるT字路まで進み</p>
+                        <p>③<span className="font-bold border-b border-gray-500">ホテル グランティア</span>と<span className="font-bold border-b border-gray-500">太陽生命</span>があるT字路まで進み</p>
                         <img src="/市電でお越しの方04.png" alt="" className="w-full h-auto" />
                     </div>
                     <div className="flex flex-col justify-between">
-                        <p>④<span className="font-bold border-b border-gray-500">北陸銀行の角を右に曲がります。</span></p>
+                        <p>④<span className="font-bold border-b border-gray-500">太陽生命の角を右に曲がります。</span></p>
                         <img src="/市電でお越しの方05.png" alt="" className="w-full h-auto" />
                     </div>
                     <div className="flex flex-col justify-between">
@@ -34,12 +34,16 @@ const AccessForTrain = () => {
                         <img src="/市電でお越しの方06.png" alt="" className="w-full h-auto" />
                     </div>
                     <div className="flex flex-col justify-between">
-                        <p>⑥<span className="font-bold border-b border-gray-500">五稜郭病院の交差点で右に曲がります。</span></p>
+                        <p>⑥<span className="font-bold border-b border-gray-500">五稜郭病院</span>の交差点で右に曲がります。</p>
                         <img src="/市電でお越しの方07.png" alt="" className="w-full h-auto" />
                     </div>
                     <div className="flex flex-col justify-between">
-                        <p>⑦到着です。正面右側の入り口からお入りください。</p>
+                        <p>⑦曲がると左手に病院が見えてきます。</p>
                         <img src="/市電でお越しの方08.png" alt="" className="w-full h-auto" />
+                    </div>
+                    <div className="flex flex-col justify-between">
+                        <p>⑧到着です。正面右側の入り口からお入りください。</p>
+                        <img src="/市電でお越しの方09.png" alt="" className="w-full h-auto" />
                     </div>
                 </div>
             </div>
