@@ -39,7 +39,7 @@ export default function Home() {
 
         {/* PC用スリック */}
         <div className="md:hidden">
-          <SlickArea imgsUrl={["/smSlick01.png", "/smSlick02.png", "/smSlick03,.png"]} />
+          <SlickArea imgsUrl={["/smSlick01.png", "/smSlick02.png", "/smSlick03.png"]} />
         </div>
         {/* <ButtonAreaForPC /> */}
         <ButtonAreaForSM />

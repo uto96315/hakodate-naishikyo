@@ -12,7 +12,7 @@ const Menu = () => {
         {
             jap: "予約から受診の流れ",
             eng: "how to reserve",
-            route: "/",
+            route: "/howToReserve",
             link: "",
         },
         {
@@ -24,7 +24,7 @@ const Menu = () => {
         {
             jap: "予防医療について",
             eng: "Preventive Medicine",
-            route: "",
+            route: "/preventiveMedicine",
             link: "",
         },
         {
