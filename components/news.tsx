@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Title from "./v1/title";
 import AllViewButton from "./v1/allViewButton";
 import { News } from "../types/news";
+import dayjs from 'dayjs';
 
 const News = () => {
     const [newsData, setNewsData] = useState<News[]>([]);
@@ -9,11 +10,9 @@ const News = () => {
     const GAS_API_URL = 'https://script.google.com/macros/s/AKfycbzPxxkf2qM2K4bmp-9WI3vYIY6PbZ1kjPybZswYEilQdV9Pzl3LIlO-IW84Vq_uDlsP/exec';
 
     const formatDate = (isoString: Date) => {
-        const date = new Date(isoString);
-        const year = date.getFullYear();
-        const month = String(date.getMonth() + 1).padStart(2, '0'); // 月は0から始まるため+1して、2桁になるように0を追加
-        const day = String(date.getDate()).padStart(2, '0'); // 日を2桁になるように0を追加
-        return `${year}年${month}月${day}日`;
+        const date = dayjs(isoString);
+        if (!date.isValid()) return 'Invalid Date';
+        return date.format('YYYY年MM月DD日');
     }
     
     async function fetchNewsData() {
