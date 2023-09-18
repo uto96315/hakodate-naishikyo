@@ -26,7 +26,7 @@ const AccessForBus = () => {
                         <img src="/市電でお越しの方06.png" alt="" className="w-full h-auto" />
                     </div>
                     <div className="flex flex-col justify-between">
-                        <p>④<span className="font-bold border-b border-gray-500">五稜郭病院の交差点で右に曲がります。</span></p>
+                        <p>④<span className="font-bold border-b border-gray-500">五稜郭病院の交差点で左に曲がります。</span></p>
                         <img src="/市電でお越しの方07.png" alt="" className="w-full h-auto" />
                     </div>
                     <div className="flex flex-col justify-between">
