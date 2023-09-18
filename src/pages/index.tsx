@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <main className='font-serif'>
-      <div>
+      <div className='' id="start">
         <div className={`${sidebarIsOpen && "bg-gray-500 bg-opacity-60 fixed w-screen h-screen z-40"}`}></div>
         <Header toggleSidebar={toggleSidebar} sidebarIsOpen={sidebarIsOpen} />
 

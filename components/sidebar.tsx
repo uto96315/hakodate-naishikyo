@@ -22,7 +22,13 @@ const Sidebar: React.FC<Props> = ({ toggleSidebar }) => {
         {
             title: "ホーム",
             destination: "/",
-            move: "",
+            move: "start",
+            icon: <AiOutlineClose size={25} />,
+        },
+        {
+            title: "内視鏡について",
+            destination: "",
+            move: "endoscopy",
             icon: <AiOutlineClose size={25} />,
         },
         {
@@ -31,23 +37,11 @@ const Sidebar: React.FC<Props> = ({ toggleSidebar }) => {
             move: "aboutClinic",
             icon: <AiOutlineClose size={25} />,
         },
-        {
-            title: "予防医療について",
-            destination: "",
-            move: "",
-            icon: <AiOutlineClose size={25} />,
-        },
         // {
         //     title: "胃カメラについて",
         //     destination: "",
         //     icon: <AiOutlineClose size={25} />,
         // },
-        {
-            title: "内視鏡について",
-            destination: "/aboutEndoscopy",
-            move: "",
-            icon: <AiOutlineClose size={25} />,
-        },
         // {
         //     title: "自由診療について",
         //     destination: "",

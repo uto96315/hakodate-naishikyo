@@ -9,12 +9,12 @@ const Menu = () => {
             route: "",
             link: "aboutClinic",
         },
-        {
-            jap: "予約から受診の流れ",
-            eng: "how to reserve",
-            route: "/howToReserve",
-            link: "",
-        },
+        // {
+        //     jap: "予約から受診の流れ",
+        //     eng: "how to reserve",
+        //     route: "/howToReserve",
+        //     link: "",
+        // },
         {
             jap: "内視鏡検査について",
             eng: "Endoscope",
