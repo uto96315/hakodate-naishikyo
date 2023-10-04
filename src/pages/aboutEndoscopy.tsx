@@ -329,7 +329,7 @@ const AboutEndoscopy: React.FC<Props> = () => {
                     <div className="flex-1  text-center pt-10 md:pt-0">
                         <h3 className="text-xl font-bold pb-3">大腸内視鏡検査について</h3>
                         <div className="flex flex-col justify-center items-center" id="down">
-                            <DownloadButton text="大腸内視鏡検査を受けられる方へ" filepath="/大腸内視鏡検査を受けられる方へ.pdf" />
+                            <DownloadButton text="大腸内視鏡前の食事、下剤の飲み方" filepath="/大腸内視鏡前の食事、下剤について.pdf" />
                             <DownloadButton text="説明書ダウンロード" filepath="/大腸内視鏡説明書.pdf" />
                             <DownloadButton text="同意書ダウンロード" filepath="/大腸内視鏡同意書.pdf" />
                             <p className="text-center px-5 md:px-20 pt-10">
