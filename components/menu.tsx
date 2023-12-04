@@ -21,10 +21,22 @@ const Menu = () => {
             route: "",
             link: "endoscopy",
         },
+        // {
+        //     jap: "予防医療について",
+        //     eng: "Preventive Medicine",
+        //     route: "/preventiveMedicine",
+        //     link: "",
+        // },
         {
-            jap: "予防医療について",
-            eng: "Preventive Medicine",
-            route: "/preventiveMedicine",
+            jap: "オンライン診療について",
+            eng: "Online Medical Treatment",
+            route: "/aboutOnlineTreatment",
+            link: "",
+        },
+        {
+            jap: "自由診療について",
+            eng: "Private Practice",
+            route: "/selfPayFee",
             link: "",
         },
         {
@@ -37,28 +49,23 @@ const Menu = () => {
         //     jap: "胃カメラ",
         //     eng: "Gastroscope",
         // },
-        // {
-        //     jap: "自由診療について",
-        //     eng: "Private Practice",
-        //     route: "",
-        // },
     ];
 
     const router = useRouter();
-    const jumpToSection = (sectionId:string) => {
+    const jumpToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId);
         if (element) {
             const offset = 100;  // ここでオフセット値を設定。例として50px上で止めたい場合
             const y = element.getBoundingClientRect().top + window.pageYOffset - offset;
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
-    }
+    };
 
     return (
         <div className="hidden py-5 md:flex justify-center cursor-pointer" style={{ backgroundColor: "#faf9f5" }}>
-            <div className="border-r-2 border-gray-300 w-min px-12 py-5 flex justify-center items-center hover:bg-gray-200">
+            {/* <div className="border-r-2 border-gray-300 w-min px-12 py-5 flex justify-center items-center hover:bg-gray-200">
                 <HiHome size={40} color="orange" />
-            </div>
+            </div> */}
             {menus.map((menu, index) => (
                 <div
                     key={index}
@@ -69,7 +76,7 @@ const Menu = () => {
                             router.push(menu.route);
                     }}
                 >
-                    <p className="text-lg">{menu.jap}</p>
+                    <p className="">{menu.jap}</p>
                     <p className="text-theme text-sm">{menu.eng}</p>
                 </div>
             ))}

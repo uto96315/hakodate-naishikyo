@@ -21,6 +21,7 @@ export const jumpToSection = (sectionId: string) => {
 const AboutEndoscopy: React.FC<Props> = () => {
     const router = useRouter();
     const menus = [
+        { title: "検査の種類", id: "type_of_inspection" },
         { title: "検査を受けるまでの流れ", id: "flow" },
         { title: "上部内視鏡検査（胃カメラ）の流れ", id: "gastroscope" },
         { title: "下部内視鏡検査(大腸カメラ)の流れ", id: "colonoscop" },
@@ -46,7 +47,7 @@ const AboutEndoscopy: React.FC<Props> = () => {
         {
             step: 3,
             title: "検査当日【受診】",
-            desc: <p>検査予約時間の<span className="border-b border-gray-500 font-bold">30分前</span>に受診下さい。</p>
+            desc: <p>検査予約時間の<span className="border-b border-gray-500 font-bold">20分前</span>に受診下さい。</p>
         },
         {
             step: 4,
@@ -127,6 +128,10 @@ const AboutEndoscopy: React.FC<Props> = () => {
         "副作用で検査を受けたことや説明内容を忘れてしまうことがある",
     ];
 
+
+    // 上部内視鏡検査で自由診療：アルコール代謝の体質検査、ピロリ菌のPCR検査、口腔・咽喉内観察
+    // 上部下部を同時にできるのは自由診療だけ
+
     return (
         <div className="bg-slate-100 min-h-screen w-full pt-5 py-10">
             <div className="mb-10 px-5">
@@ -150,6 +155,31 @@ const AboutEndoscopy: React.FC<Props> = () => {
                     </div>
                 ))}
 
+            </div>
+
+            {/* 検査の種類 */}
+            <div className="mt-20 px-5 pb-10" id="type_of_inspection">
+                <h2 className="text-2xl font-bold text-center py-1 mb-4 border-b-2 border-gray-500">検査の種類</h2>
+                <div>
+                    <p className="md:text-center pt-10">当院では自由診療での内視鏡検査も受け付けており、保険診療と比べて以下のメリットがあります。</p>
+                    <ul className="list-disc px-5 pt-5 pb-5 md:w-1/2 md:m-auto md:font-bold md:space-y-2">
+                        <li>アルコール代謝の体質検査ができる</li>
+                        <li>ピロリ菌のPCR検査ができる</li>
+                        <li>口腔・咽頭内の検査ができる</li>
+                        <li>上部下部を一日で行うことができる</li>
+                        <li>リスクと今後についての個別説明をより詳しく受けることができる</li>
+                    </ul>
+                    <p className="md:text-center">もちろん通常の保険診療も受け付けておりますので、何か疑問点などございましたらいつでもご相談ください。</p>
+
+                    <div className="mt-5 md:mt-10 mb-5 flex justify-center">
+                        <p
+                            className="border py-2 px-5 md:py-3 md:px-10 bg-theme text-white rounded-xl shadow"
+                            onClick={() => { router.push({ pathname: "/selfPayFee", query: { before: "/aboutEndoscopy" } }); }}
+                        >
+                            自由診療の価格を見る
+                        </p>
+                    </div>
+                </div>
             </div>
 
             {/* 検査を受けるまでの流れ */}

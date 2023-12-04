@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Movies from "./movies";
+import DownloadButton from "./v1/downloadButton";
 import YouTubeVideo from "./v1/youtube";
 
 const featuresData = [
@@ -46,7 +47,13 @@ const ClinicFeatures = () => {
                                 </div>
                                 <p className="py-3 text-lg md:text-xl lg:pr-20">
                                     {data.description}
+                                    <br />
                                 </p>
+                                {/* {data.id === 1 &&
+                                    <div className="text-center flex justify-center pt-5">
+                                        <DownloadButton text="説明を見る" filepath="/CARADA.jpg" />
+                                    </div>
+                                } */}
                             </div>
 
                             <img src={data.imgPath} alt="" className="md:h-72" />

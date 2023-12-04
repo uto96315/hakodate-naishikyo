@@ -37,7 +37,7 @@ export default function Home() {
           <SlickArea imgsUrl={["/slick01.png", "/slick02.png", "/slick03.png"]} />
         </div>
 
-        {/* PC用スリック */}
+        {/* SM用スリック */}
         <div className="md:hidden">
           <SlickArea imgsUrl={["/smSlick01.png", "/smSlick02.png", "/smSlick03.png"]} />
         </div>

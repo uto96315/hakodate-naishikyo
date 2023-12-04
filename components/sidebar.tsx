@@ -37,6 +37,18 @@ const Sidebar: React.FC<Props> = ({ toggleSidebar }) => {
             move: "aboutClinic",
             icon: <AiOutlineClose size={25} />,
         },
+        {
+            title: "オンライン診療について",
+            destination: "/aboutOnlineTreatment",
+            move: "",
+            icon: <AiOutlineClose size={25} />,
+        },
+        {
+            title: "自由診療について",
+            destination: "/selfPayFee",
+            move: "",
+            icon: <AiOutlineClose size={25} />,
+        },
         // {
         //     title: "胃カメラについて",
         //     destination: "",
@@ -55,7 +67,7 @@ const Sidebar: React.FC<Props> = ({ toggleSidebar }) => {
         },
     ];
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen bg-gray-50">
             <div
                 className="flex items-center justify-end py-5 px-3 border-b-2"
             >
@@ -73,7 +85,7 @@ const Sidebar: React.FC<Props> = ({ toggleSidebar }) => {
                     onClick={() => { 
                         console.log("押された");
                         toggleSidebar();
-                        menu.destination === "" ? jumpToSection(menu.move) : null
+                        menu.destination === "" ? jumpToSection(menu.move) : router.push(menu.destination)
                     }}
                     className="py-4 px-10 border-b-2 text-lg flex justify-center items-center"
                 >

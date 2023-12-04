@@ -3,4 +3,5 @@ export type News = {
     title: string;
     content: string;
     date: Date;
+    detailPage: boolean;
 };
